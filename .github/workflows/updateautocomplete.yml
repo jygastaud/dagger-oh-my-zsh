@@ -1,0 +1,28 @@
+name: Update autocomplete script CI
+
+on:
+  schedule:
+  - cron: "0 0 * * *"
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code...
+        uses: actions/checkout@v2
+
+      - name: Install Dagger...
+        uses: dagger/dagger-action@v1
+        with:
+          install-only: true
+
+      - name: Update script
+        run: make update-autocomplete
+        
+      - name: Git Commit Push Action
+        uses: GuillaumeFalourd/git-commit-push@v1
+        with:
+          empty: 1

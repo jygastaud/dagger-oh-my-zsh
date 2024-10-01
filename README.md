@@ -22,9 +22,7 @@ plugins=(git dagger)
 
 ### [Antigen](https://github.com/zsh-users/antigen)
 
-**Need to be tested**
-
-Add `antigen bundle jygastaud/dagger-oh-my-zsh` to your `.zshrc` file. Antigen will handle cloning the plugin for you automatically the next time you start `zsh`. You can also add the plugin to a running ZSH with `antigen bundle gusaiani/elixir-oh-my-zsh` for testing before adding it to your `.zshrc`.
+Add `antigen bundle jygastaud/dagger-oh-my-zsh@main` to your `.zshrc` file. Antigen will handle cloning the plugin for you automatically the next time you start `zsh`. You can also add the plugin to a running ZSH with `antigen bundle jygastaud/dagger-oh-my-zsh@main` for testing before adding it to your `.zshrc`.
 
 
 ### [Zgen](https://github.com/tarjoilija/zgen)
